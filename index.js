@@ -20,7 +20,7 @@ app.use(cors({
 }))
 
 app.get("/",(req,res)=>{
-   res.send("Hello..! WELCOME TO MOCK 15 API");
+   res.send({"WELOCME_MESSAGE":"Hello..! WELCOME TO MOCK 15 API"});
 })
 
 app.get("/users",async(req,res)=>{

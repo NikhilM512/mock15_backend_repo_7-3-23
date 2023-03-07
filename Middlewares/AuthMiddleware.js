@@ -10,6 +10,7 @@ const authenticationMiddleware = ( req, res, next ) => {
         const decoded = jwt.verify(Token, process.env.KEY)
         if(decoded){
             const userID = decoded.userID
+            console.log(userID)
             req.body.userID = userID
             next()
         }
